@@ -19,6 +19,9 @@
    Filename: tss_styles.css
 
 */
+/* * {
+    border: 1px solid red;
+} */
 /* HTML and Body Styles */
 html {
     background-color: hsl(27, 72%, 72%);
@@ -33,14 +36,15 @@ body {
 
 /* Heading Styles */
 h1 {
+    /* Unused. 
     color: white;
-    background-color: rgb(222, 128, 60);
+    background-color: rgb(222, 128, 60); */
     font-size: 2.2em;
 }
 
 h2 {
-    color: white;
-    background-color: rgb(235, 177, 131);
+    /* color: white;
+    background-color: rgb(235, 177, 131); */
     font-size: 1.5em;
 }
 
@@ -73,6 +77,7 @@ aside {
 
 aside blockquote {
     color: rgb(232, 165, 116);
+    margin: 20px 5px;
 }
 
 /* Navigation Styles */
@@ -82,9 +87,32 @@ nav {
 
 nav>ul {
     line-height: 2em;
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+nav>ul>li.newgroup {
+    margin-top: 20px;
 }
 
 /* List Styles */
+article#about_tss ul {
+    list-style-image: url('runicon.png');
+    list-style-position: outside;
+}
+
+article.syllabus ol {
+    list-style-type: upper-roman;
+}
+
+article.syllabus ol ol {
+    list-style-type: upper-alpha;
+}
+
+article.syllabus ol ol ol {
+    list-style-type: decimal;
+}
+
 /* Footer Styles */
 body>footer address {
     background-color: rgb(222, 128, 60);
